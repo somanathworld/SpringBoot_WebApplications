@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org"> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<h1 class="bg-secondary text-white text-center mt-3">Employee Modification Form</h1>
+	
+		<form th:action="@{/emp/edit_employee}" th:object="${emp}" method = "POST">
+			<table align="center" border = 1>
+				<tr>
+					<td>Employee eno: </td>
+					<td><input type="text" th:field="*{empno}" readonly="readonly"> </td>
+				</tr>
+				<tr>
+					<td>Employee name: </td>
+					<td><input type="text" th:field="*{ename}"> </td>
+				</tr>
+				<tr>
+					<td>Employee desg: </td>
+					<td><input type="text" th:field="*{job}"> </td>
+				</tr>
+				<tr>
+					<td>Employee Salary: </td>
+					<td><input type="text" th:field="*{sal}"> </td>
+				</tr>
+				<tr>
+					<td>Employee Dept no: </td>
+					<td><input type="text" th:field="*{deptno}"/> </td>
+				</tr>
+				<tr>
+					<td><input type = "submit" value = "submit"/></td>
+					<td><input type = "reset" value = "cancel"/></td>
+				</tr>
+			</table>
+		</form>		
+
+	</div>
+</body>
+</html>
