@@ -36,8 +36,8 @@ public class SecurityConfigDB extends WebSecurityConfigurerAdapter{
 		http.authorizeRequests()
 		.antMatchers("/").permitAll()
 		.antMatchers("/offers").authenticated()
-		.antMatchers("/balance").hasAnyRole("CUSTOMER", "MANAGER")
-		.antMatchers("/loan").hasRole("MANAGER")
+		.antMatchers("/balance").hasAnyAuthority("CUSTOMER", "MANAGER")   //use hasAnyAuthorities()
+		.antMatchers("/loan").hasAuthority("MANAGER")
 		.and().formLogin()
 		.and().exceptionHandling().accessDeniedPage("/denied")
 		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/signout"));
