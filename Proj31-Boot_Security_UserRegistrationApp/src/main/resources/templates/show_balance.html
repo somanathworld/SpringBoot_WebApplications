@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Current Balance Page</title>
+</head>
+<body>
+	<h1 sytle = "color:blue; text-align:center">Current Balance Page</h1>
+	<b>your current accout balance is : <span th:text="${bal_amt}"></b>
+	<br/>
+	<a th:href="@{/bank/}">Home</a>
+	<br/>
+	<a th:href="@{/signout}">logout</a>
+</body>
+</html>

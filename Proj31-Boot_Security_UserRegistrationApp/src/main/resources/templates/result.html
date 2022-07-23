@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Loan Approval Page</title>
+</head>
+<body>
+<b>Hello, </b>
+	<h1 sytle = "color:blue; text-align:center"><span th:text="${msg}"></h1>
+	<br/>
+	<a th:href="@{/user/login}">Login</a>
+	<br/>
+	<a th:href="@{/user/register}">Add another user</a>
+	<br/>
+	<a th:href="@{/signout}">logout</a>
+</body>
+</html>

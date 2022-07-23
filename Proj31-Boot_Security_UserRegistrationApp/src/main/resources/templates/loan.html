@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Loan Approval Page</title>
+</head>
+<body>
+	<h1 sytle = "color:blue; text-align:center">Loan Approval Page</h1>
+	<b>you are approved for loan amount : <span th:text="${loan_amt}"></b>
+	<br/>
+	<a th:href="@{/bank/}">Home</a>
+	<br/>
+	<a th:href="@{/signout/}">logout</a>
+</body>
+</html>

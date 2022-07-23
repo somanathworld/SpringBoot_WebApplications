@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	<h1 style = "color:red; text-align:center">Welcome to Xyz Bank -- Home Page</h1>
+	<ol>
+		<li><a th:href="@{/bank/offers}">Show Offers</a></li>
+		<li><a th:href="@{/bank/balance}">Check Balance</a></li>
+		<li><a th:href="@{/bank/loanApprove}">Approved Loan</a></li>
+	</ol>
+	<br/><br/>
+	<a th:href="@{/user/register}">Register User</a>
+</body>
+</html>
