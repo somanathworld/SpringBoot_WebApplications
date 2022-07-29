@@ -1,0 +1,36 @@
+http://localhost:4041/RestApp/product/register
+
+{
+    "pno" : 101,
+    "pname" : "TV",
+    "price" : 12999.40,
+    "type" : "Electronics"
+}
+
+
+http://localhost:4041/RestApp/emp/register
+
+{
+    "eno" : 1001,
+    "ename" : "raja",
+    "companiesList" : [
+        {
+            "name" : "HCL",
+            "addrs" : "Hyd",
+            "type" : "IT",
+            "size" : 120
+        },
+        {
+            "name" : "COGNIZANT",
+            "addrs" : "Pune",
+            "type" : "IT",
+            "size" : 13550
+        }
+    ],
+    "dob" : "1990-11-20",
+    "joinDate" : "2015-10-12 17:10:34",
+    "familyIds" : [
+        {"addhar" : 2354234, "voterId" : 4523523, "panNo" : 2345234},
+        {"addhar" : 2355364, "voterId" : 4522341, "panNo" : 2343544}
+    ]
+}

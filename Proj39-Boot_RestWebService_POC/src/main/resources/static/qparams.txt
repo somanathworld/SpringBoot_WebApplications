@@ -1,0 +1,12 @@
+http://localhost:4041/RestApp/qparam/params1?cno=101&cname=raja     101<---->raja
+http://localhost:4041/RestApp/qparam/params1?no=101&cname=raja		400 bad request
+
+http://localhost:4041/RestApp/qparam/params2?cno=101&cname=raja     101<---->raja
+http://localhost:4041/RestApp/qparam/params2?cno=101				101<---->null
+http://localhost:4041/RestApp/qparam/params2?no=101					400 bad request
+
+http://localhost:4041/RestApp/qparam/params3?cno=101&cname=raja     101<---->raja
+http://localhost:4041/RestApp/qparam/params3?cno=101				101<---->null
+http://localhost:4041/RestApp/qparam/params3?no=101					10<---->null
+http://localhost:4041/RestApp/qparam/params3?						10<---->null
+http://localhost:4041/RestApp/qparam/params3						10<---->null

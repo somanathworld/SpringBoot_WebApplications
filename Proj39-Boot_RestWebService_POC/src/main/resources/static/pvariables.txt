@@ -1,0 +1,14 @@
+http://localhost:4041/RestApp/pvariables/vars1/101/raja			101<------>raja
+http://localhost:4041/RestApp/pvariables/vars1/101/raja/hyd		404 error
+http://localhost:4041/RestApp/pvariables/vars1/101				404 error
+
+http://localhost:4041/RestApp/pvariables/vars2/101/raja			101<------>raja
+http://localhost:4041/RestApp/pvariables/vars2/101/raja/hyd		404 error
+http://localhost:4041/RestApp/pvariables/vars2/101				404 error
+http://localhost:4041/RestApp/pvariables/vars2					404 error
+
+http://localhost:4041/RestApp/pvariables/report/101/raja		from fetchtData2d
+http://localhost:4041/RestApp/pvariables/report/101/name		from fetchtData1d1s
+http://localhost:4041/RestApp/pvariables/report/101/name		from fetchtData1d1s
+http://localhost:4041/RestApp/pvariables/report/no/name			from fetchtData2s
+http://localhost:4041/RestApp/pvariables/report/cno/name		400 bad request
