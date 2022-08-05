@@ -1,0 +1,27 @@
+1.health and memory related information
+http://localhost:6600/actuator/health
+
+2.Display project realted information 
+http://localhost:6600/actuator/info
+
+3.Gives all spring beans of the current Spring-Boot Project
+http://localhost:6600/actuator/beans
+
+4.Gives all the @ConfigurationProperties based key=value
+http://localhost:6600/actuator/configprops
+
+5.Current env. of the project
+http://localhost:6600/actuator/env
+
+6.Gives all log message related details along with logging level
+http://localhost:6600/actuator/loggers
+
+http://localhost:6600/actuator/threaddump
+
+http://localhost:6600/actuator/mappings
+
+http://localhost:6600/actuator/headdump
+
+http://localhost:6600/actuator/caches
+
+http://localhost:6600/actuator/metrics
