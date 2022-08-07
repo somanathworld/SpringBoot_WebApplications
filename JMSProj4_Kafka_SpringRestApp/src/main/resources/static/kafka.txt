@@ -1,0 +1,17 @@
+zookeeper-server-start.bat D:\0.Software\1.JMS\kafka_2.13-3.2.1\config\zookeeper.properties
+
+kafka-server-start.bat D:\0.Software\1.JMS\kafka_2.13-3.2.1\config\server.properties
+
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic nit-tpc
+
+kafka-console-producer.bat --bootstrap-server localhost:9092 --topic nit-tpc hello
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic nit-tpc
+
+
+demo
+http://localhost:4041/RestKafkaApp/send?message=Welcome!!
+http://localhost:4041/RestKafkaApp/send?message=How are you?
+http://localhost:4041/RestKafkaApp/send?message=Nice to meet you...
+
+http://localhost:4041/RestKafkaApp/readAll
