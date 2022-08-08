@@ -1,0 +1,15 @@
+1. For FB based oauth
+	https://developers.facebook.com/  -> MyApps -> Create App ->None -> Next 
+	specify App name and email id -> Create App
+	Settings -> Basic -> collect App Id and App Secrete  put in properties file
+	
+2. For Google based oauth
+	https://console.developers.google.com/ -> project -> create new Project->
+	fill up the details
+	Go to credentials on the left side window -> Create Credentials -> 
+	oauth Client Id -> application type :: web application ->
+	uri : http://localhost:4041
+	authorized redirect url : http://localhost:4041/login/oauth2/code/google (fixed)
+	-> create
+	collecte Appid and Appsecrete
+	
