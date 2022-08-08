@@ -1,0 +1,56 @@
+Application Start order
+1.eureka Server
+2.Config Server
+3.Admin Server
+4.Produer MS(IPLTeamMS)
+5.Consumer MS(IPLPlayerMS)
+6.API Gateway Server
+
+http://localhost:9999/applications
+to monitor applications
+
+POST http://desktop-egfvmc6:9100/team-api/team/save
+
+{
+	"teamName" : "RCB",
+	"location" : "Bangalore",
+	"owner" : "Vijay Malia",
+	"captain" : "Virat Kohil"
+}
+
+{
+	"teamName" : "KXIP",
+	"location" : "Punjab",
+	"owner" : "Preeti Jinta",
+	"captain" : "KL Rahul"
+}
+
+{
+	"teamName" : "MI",
+	"location" : "Mumbai",
+	"owner" : "Nita Ambani",
+	"captain" : "Rohit Sharma"
+}
+
+GET http://desktop-egfvmc6:9100/team-api/team/all
+
+POST http://desktop-egfvmc6:9100/player-api/player/save
+{
+	"pname" : "Chris Gayle",
+	"role" : "All-rounder",
+	"jersyNo" : "54",
+	"team":{
+		"teamId":1000
+	}
+}
+
+{
+	"pname" : "David Miller",
+	"role" : "Batsman",
+	"jersyNo" : "124",
+	"team":{
+		"teamId":1001
+	}
+}
+
+POST http://desktop-egfvmc6:9100/player-api/player/all
